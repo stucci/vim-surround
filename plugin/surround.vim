@@ -384,6 +384,18 @@ function! s:dosurround(...) " {{{1
   if char == 'r'
     let char = ']'
   endif
+  if char == 'q'
+    let char = ''''
+  endif
+  if char == 'd'
+    let char = '"'
+  endif
+  if char == 'c'
+    let char = '}'
+  endif
+  " if char == 'g'
+  "   let char = '`'
+  " endif
   let newchar = ""
   if a:0 > 1
     let newchar = a:2
